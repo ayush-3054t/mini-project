@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="resources/css/365style.css">
+    <title>Registration | 365 Entertainment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #141e30, #243b55);
+            color: white;
+            margin: 0;
+        }
+        .register-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .register-box {
+            display: flex;
+            flex-direction: column;
+            background: #180f35;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        .register-box h1 {
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+        .register-box form {
+            display: flex;
+            flex-direction: column;
+        }
+        .register-box input {
+            margin-bottom: 1rem;
+            padding: 0.8rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .register-box input:focus {
+            outline: none;
+            box-shadow: 0px 0px 5px #00d4ff;
+        }
+        .register-box button {
+            padding: 0.8rem;
+            border: none;
+            background: #00d4ff;
+            color: white;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .register-box button:hover {
+            background: #00a3cc;
+        }
+        .register-box a {
+            color: #00d4ff;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .register-box a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="index.html" class="logo"><img src="resources/img/LGo8LI4agAQfi7bgZp7ny.jpg" alt="365 Entertainment logo"></a>
+        <ul id="navlinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="movie.html">Movies</a></li>
+            <li><a href="webseries.html">webseries</a></li>
+            <li><a href="tvshows.html">TV Series</a></li>
+            <li><a href="music.html">Audio</a></li>
+            <li><a href="login.html">login</a></li>
+            <li><a href="registration.html">signup</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="register-container">
+    <div class="register-box">
+        <h1>Register</h1>
+        <!-- <form action="register-process.php" method="POST"> -->
+            <input type="text" name="fullname" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+            <input type="text" name="phone" placeholder="Phone Number" required>
+            <button type="submit">Register</button>
+        <!-- </form> -->
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+</div>
+
+<footer>
+    <img src="resources/img/LGo8LI4agAQfi7bgZp7ny.jpg" alt="365 Entertainment logo" style="height: 30px;">
+    <p>Powered by  STREAMIFY. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

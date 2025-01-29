@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Series | 365 Entertainment</title>
+    <script src="https://kit.fontawesome.com/f0b4d212f8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="resources/css/365style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo"><img src="resources/img/LGo8LI4agAQfi7bgZp7ny.jpg" alt="Streamify"></a>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul id="navlinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movie.html">Movies</a></li>
+                <li><a href="webseries.html">webseries</a></li>
+                <li><a href="tvshows.html">TV Series</a></li>
+                <li><a href="music.html">Audio</a></li>
+                <li><a href="login.html">login</a></li>
+                <li><a href="registration.html">signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="carousel">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="resources/img/webseriespage/series1.jpg" style="width:100%">        
+            </div>
+            <div class="mySlides fade">
+                <img src="resources/img/webseriespage/series2.jpg" style="width:100%">    
+            </div>
+            <div class="mySlides fade">
+                <img src="resources/img/webseriespage/series3.jpg" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+
+    <section class='bar'>
+        <div class="dropdown">
+            <button class="dropdown-btn"><span id='genre-name'>Genre</span>
+                <i class="fas fa-sort-down"></i>
+            </button>
+            <div class="dropdown-list">
+                <a href="#" data-filter='all' class='genre'>All</a>
+                <a href="#" data-filter='drama' class='genre'>Drama</a>
+                <a href="#" data-filter='thriller' class='genre'>Thriller</a>
+                <a href="#" data-filter='comedy' class='genre'>Comedy</a>
+            </div>
+        </div>
+
+        <div class="search">
+            <form>
+                <input type="text" placeholder="Search for web series" id='input' onkeyup="search()">
+                <button type="submit" class="searchbtn"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <section>
+        <div class="images" id='block'>
+            <a href="videoplayer3.html">
+
+                <div class="box">
+                    <img src="resources/img/webseriespage/series1.jpeg" alt="Web Series Cover">
+                    <div class="text">
+                        <h3>MIRZAPUR</h3>
+                        <p>Genre: Drama</p>
+                    </div>
+                </div>
+            </a>
+            <div class="box drama">
+                <img src="resources/img/webseriespage/series2.jpeg" alt="Web Series Cover">
+                <div class="text">
+                    <h3>FAMILY MAN</h3>
+                    <p>Genre: Drama</p>
+                </div>
+            </div>
+            <div class="box thriller">
+                <img src="resources/img/webseriespage/series3.jpeg" alt="Web Series Cover">
+                <div class="text">
+                    <h3>PANCHAYAT</h3>
+                    <p>Genre: Thriller</p>
+                </div>
+            </div>
+            <div class="box comedy">
+                <img src="resources/img/webseriespage/series4.jpeg" alt="Web Series Cover">
+                <div class="text">
+                    <h3>FARZI</h3>
+                    <p>Genre: Comedy</p>
+                </div>
+            </div>
+            <div class="box comedy">
+                <img src="resources/img/webseriespage/series5.jpeg" alt="Web Series Cover">
+                <div class="text">
+                    <h3>ASUR</h3>
+                    <p>Genre: Comedy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <img src="resources/img/LGo8LI4agAQfi7bgZp7ny.jpg" alt="365 Logo">
+        <p>Powered by 365 Entertainment Portal 2019. All Rights Reserved.</p>
+    </footer>
+
+    <script src="resources/js/script.js"></script>
+</body>
+</html>

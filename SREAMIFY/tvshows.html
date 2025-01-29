@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Shows |  STREAMIFYt</title>
+    <script src="https://kit.fontawesome.com/f0b4d212f8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="resources/css/365style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo"><img src="resources/img/LGo8LI4agAQfi7bgZp7ny.jpg" alt="365 Entertainment logo"></a>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul id="navlinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movie.html">Movies</a></li>
+                <li><a href="webseries.html">webseries</a></li>
+                <li><a href="tvshows.html">TV Series</a></li>
+                <li><a href="music.html">Audio</a></li>
+                <li><a href="login.html">login</a></li>
+                <li><a href="registration.html">signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="carousel">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="resources/img/tvshows/bg1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="resources/img/tvshows/bg2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="resources/img/tvshows/bg3.jpg" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+
+    <section class='bar'>
+        <div class="dropdown">
+            <button class="dropdown-btn"><span id='genre-name'>Genre</span>
+                <i class="fas fa-sort-down"></i>
+            </button>
+            <div class="dropdown-list">
+                <a href="#" data-filter='all' class='genre'>All</a>
+                <a href="#" data-filter='comedy' class='genre'>Comedy</a>
+                <a href="#" data-filter='drama' class='genre'>Drama</a>
+                <a href="#" data-filter='thriller' class='genre'>Thriller</a>
+                <a href="#" data-filter='reality' class='genre'>Reality</a>
+            </div>
+        </div>
+
+        <div class="search">
+            <form>
+                <input type="text" placeholder="Search your favorite TV show" id='input' onkeyup="search()">
+                <button type="submit" class="searchbtn"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <section>
+        <div class="images" id='block'>
+            <div class="box comedy">
+                <img src="resources/img/tvshows/show1.jpeg" alt="TV Show">
+                <div class="text">
+                    <h3>The Office</h3>
+                    A mockumentary sitcom that depicts the everyday lives of office employees.
+                </div>
+            </div>
+            <a href="videoplayer2.html">
+
+                <div class="box drama">
+                    <img src="resources/img/tvshows/show2.jpg" alt="TV Show">
+                    <div class="text">
+                        <h3>Breaking Bad</h3>
+                        A high school chemistry teacher turned methamphetamine producer.
+                    </div>
+                </div>
+            </a>
+            <div class="box thriller">
+                <img src="resources/img/tvshows/show3.jpg" alt="TV Show">
+                <div class="text">
+                    <h3>Stranger Things</h3>
+                    A group of kids uncovering mysteries in a small town.
+                </div>
+            </div>
+            <div class="box reality">
+                <img src="resources/img/tvshows/show4.jpg" alt="TV Show">
+                <div class="text">
+                    <h3>MasterChef</h3>
+                    A cooking competition where amateur chefs compete.
+                </div>
+            </div>
+            <div class="box comedy">
+                <img src="resources/img/tvshows/show5.jpeg" alt="TV Show">
+                <div class="text">
+                    <h3>Brooklyn Nine-Nine</h3>
+                    Comedy revolving around a team of detectives.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <img src="resources/img/LGo8LI4agAQfi7bgZp7ny.jpg" alt="365 Logo">
+        <p>Powered by STREAMIFY. All Rights Reserved.</p>
+    </footer>
+
+    <script src="resources/js/script.js"></script>
+</body>
+</html>
