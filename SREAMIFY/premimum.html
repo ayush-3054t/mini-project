@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Subscription |  STREAMIFY </title>
+    <script src="https://kit.fontawesome.com/f0b4d212f8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <style>
+        /* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: black;
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Header and Footer with Gradient Animation */
+header, footer {
+    padding: 10px 20px;
+    background: linear-gradient(-45deg, #fab752, #f0e268, #b7ecf0, #abd8e9);
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+}
+nav ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+.logo img {
+    cursor: pointer;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 2px 4px 10px #5a5959;
+    margin-right: 50px;
+}
+nav ul li a {
+    color: black;
+    margin: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+nav ul li a:hover {
+    opacity: 0.8;
+}
+
+.hamburger {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+.hamburger:focus {
+    outline: none;
+}
+
+/* Premium Section */
+.premium-header {
+    text-align: center;
+    background-color: #fab752;
+    color: black;
+    padding: 50px 20px;
+}
+.premium-header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+.premium-header p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.plans {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.plan {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.plan.premium {
+    border: 2px solid #fab752;
+}
+.plan:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.plan h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+.plan p {
+    font-size: 20px;
+    color: #fab752;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.plan ul li {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #7f8c8d;
+}
+
+.subscribe-btn {
+    background-color: #fab752;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.subscribe-btn:hover {
+    background-color: #e6a544;
+}
+
+/* Footer Styling */
+footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+footer p {
+    margin-left: 20px;
+    color: #3f3f3f;
+}
+footer img {
+    cursor: pointer;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 2px 4px 10px #5a5959;
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 767px) {
+    .plans {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul {
+        display: none;
+    }
+    .show {
+        display: flex;
+    }
+    #navlinks {
+        flex-direction: column;
+        width: 100%;
+    }
+    #navlinks li {
+        justify-content: center;
+    }
+    #navlinks li a {
+        border-bottom: 1px solid #3f3f3f;
+    }
+    nav {
+        justify-content: space-between;
+    }
+    .hamburger {
+        display: block;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo"><img src="resources/img/LGo8LI4agAQfi7bgZp7ny.jpg" alt="365 entertainment logo"></a>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul id="navlinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movie.html">Movies</a></li>
+                <li><a href="tv-shows.html">TV Shows</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="registration.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="premium">
+        <div class="premium-header">
+            <h1>Go Premium</h1>
+            <p>Unlock a world of unlimited entertainment with STREAMIFY Premium!</p>
+        </div>
+
+        <div class="plans">
+            <div class="plan">
+                <h2>1 Month Plan</h2>
+                <p><strong>₹200</strong></p>
+                <ul>
+                    <li>Access to all movies</li>
+                    <li>Stream in 720p HD</li>
+                    <li>Watch on 1 device</li>
+                </ul>
+                <a href="payment.html">
+                <button class="subscribe-btn">Subscribe Now</button></a>
+            </div>
+
+            <div class="plan premium">
+                <h2>2 Months Plan</h2>
+                <p><strong>₹600</strong></p>
+                <ul>
+                    <li>Access to all movies and TV shows</li>
+                    <li>Stream in 1080p Full HD</li>
+                    <li>Watch on up to 2 devices</li>
+                </ul>
+                <a href="payment.html">
+                    <button class="subscribe-btn">Subscribe Now</button></a>
+            </div>
+
+            <div class="plan">
+                <h2>1 Year Plan</h2>
+                <p><strong>₹7000</strong></p>
+                <ul>
+                    <li>Access to all content</li>
+                    <li>Stream in 4K Ultra HD</li>
+                    <li>Watch on up to 4 devices</li>
+                    <li>Download content for offline viewing</li>
+                </ul>
+                <a href="payment.html">
+                    <button class="subscribe-btn">Subscribe Now</button></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <img src="resources/img/LGo8LI4agAQfi7bgZp7ny.jpg" alt="365 Logo">
+        <p>Powered by  STREAMIFY. All Rights Reserved.</p>
+    </footer>
+</body>
+<script src="resources/js/script.js"></script>
+</html>
